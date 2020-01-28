@@ -7,7 +7,7 @@ app = Flask(__name__)
 def hello():
     name = "Hoge"
     # return name
-    return render_template('index.html', title='flask test', name=name)  # 変更
+    return render_template('index.html', title='藤原竜也ガチャ', name=name)  # 変更
 
 
 # おまじない
