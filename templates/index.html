@@ -1,9 +1,23 @@
 {% extends "layout.html" %}
 {% block content %}
-<h3>Hello</h3>
+<h1 class="title">藤原竜也ガチャ</h1>
 こんにちは。{{ name }}さん。
-<p>
-    <img src="/static/images/tatsuya_example.jpg" alt="tatsuya_example">
-</p>
+
+<div class="slot">
+    <p class="slot_items">
+        <img src="/static/images/tatsuya_ex1.jpg" alt="tatsuya_ex1" width="250" height="300">
+        <img src="/static/images/tatsuya_ex2.jpg" alt="tatsuya_ex2" width="250" height="300">
+        <img src="/static/images/tatsuya_ex3.jpg" alt="tatsuya_ex3" width="250" height="300">
+    </p>
+</div>
+
+<div class="slot">
+    <p class="slot_items">
+        <img src="/static/images/test.gif" alt="test" width="250" height="300">
+        <img src="/static/images/test.gif" alt="test" width="250" height="300">
+        <img src="/static/images/test.gif" alt="test" width="250" height="300">
+    </p>
+</div>
+
 
 {% endblock %}
