@@ -3,12 +3,19 @@
 body {
     background: white;
 }
+.reflection{
+    position:relative;
+    overflow:hidden;
+}
 
-.slot{
+#buttons{
+    text-align: center;
+}
+
+#slot{
     margin: 10px auto;
     width: 800px;
     height: 300px;
-    background: green;
 }
 
 .slot_items{
@@ -18,4 +25,58 @@ body {
 h1{
     margin: 20px auto;
     text-align: center;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    
+    color: #FFF;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    transition: .4s;
+  }
+  
+  #roll_button:hover {
+    background: #668ad8;
+  }
+
+
+  #stop_button:hover {
+    background:#b8560b;
+  }
+
+
+  #roll_button {
+    background: skyblue;
+  }
+
+  #stop_button {
+    background: lightcoral;
+  }
+
+ 
+ 
+.reflection:after {
+content:"";
+height:100%;
+width:30px;
+position:absolute;
+top:-180px;
+left:0;
+background-color: #fff;
+opacity:0;
+-webkit-transform: rotate(45deg);
+-webkit-animation: reflection 2s ease-in-out infinite;
+}
+ 
+@keyframes reflection {
+0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
 }

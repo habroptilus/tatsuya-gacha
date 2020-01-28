@@ -3,33 +3,23 @@
 <h1 class="title">藤原竜也ガチャ</h1>
 
 
-<input type="button" value="Exec" onclick="RollGacha();" />
-
-<input type="button" value="Stop" onclick="FixGacha();" />
-
-
-<!--こんにちは。{{ name }}さん。-->
+<p id="buttons" class="center">
+    <a href="#" class="button" id="roll_button" type="button" onclick="RollGacha();">まわす</a>
+    <a href="#" class="button" id="stop_button" type="button" onclick="FixGacha();">とめる</a>
+</p>
 
 
-<div class="slot">
+<div id="slot" class="center">
     <p class="slot_items">
-        <img id="slot1" class="slot_item" src="/static/images/tatsuya_ex1.jpg" alt="slot1" width="250" height="300">
-        <img id="slot2" class="slot_item" src="/static/images/tatsuya_ex2.jpg" alt="slot2" width="250" height="300">
-        <img id="slot3" class="slot_item" src="/static/images/tatsuya_ex3.jpg" alt="slot3" width="250" height="300">
+        <img id="slot1" class="slot_item reflection" src="/static/images/tatsuya_ex1.jpg" alt="slot1" width="250"
+            height="300">
+        <img id="slot2" class="slot_item reflection" src="/static/images/tatsuya_ex2.jpg" alt="slot2" width="250"
+            height="300">
+        <img id="slot3" class="slot_item reflection" src="/static/images/tatsuya_ex3.jpg" alt="slot3" width="250"
+            height="300">
     </p>
 </div>
 
-
-<!-- gif part
-<div class="slot">
-    <p class="slot_items">
-        <img src="/static/images/test.gif" alt="test" width="250" height="300">
-        <img src="/static/images/test.gif" alt="test" width="250" height="300">
-        <img src="/static/images/test.gif" alt="test" width="250" height="300">
-    </p>
-</div>
-
--->
 
 
 {% endblock %}
