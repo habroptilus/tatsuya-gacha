@@ -1,1 +1,36 @@
-Hello world
+<!doctype html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <title>藤原竜也ガチャ</title>
+</head>
+
+
+<body>
+    <h1 class="title">藤原竜也ガチャ</h1>
+
+
+    <p id="buttons" class="center">
+        <a href="#" class="button" id="roll_button" type="button" onclick="RollGacha();">まわす</a>
+        <a href="#" class="button" id="stop_button" type="button" onclick="FixGacha();">とめる</a>
+    </p>
+
+
+    <div id="slot" class="center">
+        <p class="slot_items">
+            <img id="slot1" class="slot_item reflection" src="/static/images/tatsuya_ex1.jpg" alt="slot1" width="250"
+                height="300">
+            <img id="slot2" class="slot_item reflection" src="/static/images/tatsuya_ex2.jpg" alt="slot2" width="250"
+                height="300">
+            <img id="slot3" class="slot_item reflection" src="/static/images/tatsuya_ex3.jpg" alt="slot3" width="250"
+                height="300">
+        </p>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+
+</html>
