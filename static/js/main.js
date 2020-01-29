@@ -3,7 +3,7 @@ function RollGacha() {
     PlaySlotSound()
     elements = document.getElementsByClassName("slot_item");
     elements = Array.from(elements);
-    elements.forEach(element => element.setAttribute("src", "/static/images/" + element.id + ".gif"))
+    elements.forEach(element => element.setAttribute("src", "static/images/" + element.id + ".gif"))
 }
 
 
@@ -13,7 +13,7 @@ function FixGacha() {
         rand_id = String(Math.floor(Math.random() * item_num) + 1);
         target = document.getElementById("slot" + String(i + 1))
         if (target.src.slice(-4) == ".gif") {
-            target.setAttribute("src", "/static/images/tatsuya_ex" + rand_id + ".jpg")
+            target.setAttribute("src", "static/images/tatsuya_ex" + rand_id + ".jpg")
             if (i == 2) {
                 StopSound()
             }
@@ -52,7 +52,7 @@ function ResetReflection() {
 
 function PlayTatsuyaScream() {
     audioElem = new Audio();
-    audioElem.src = "/static/sounds/scream_tatsuya.mp3";
+    audioElem.src = "static/sounds/scream_tatsuya.mp3";
     audioElem.play();
 }
 
@@ -60,13 +60,13 @@ function PlayTatsuyaScream() {
 function PlaySlotSound() {
     audioElem_slot = new Audio();
     audioElem_slot.loop = true;
-    audioElem_slot.src = "/static/sounds/slot.mp3";
+    audioElem_slot.src = "static/sounds/slot.mp3";
     audioElem_slot.play();
 }
 
 function PlayFixSound() {
     audioElem = new Audio();
-    audioElem.src = "/static/sounds/fix.mp3";
+    audioElem.src = "static/sounds/fix.mp3";
     audioElem.play();
 }
 
