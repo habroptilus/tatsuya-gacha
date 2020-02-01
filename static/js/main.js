@@ -1,4 +1,5 @@
 function RollGacha() {
+    StopSound()
     ResetReflection()
     PlaySlotSound()
     elements = document.getElementsByClassName("slot_item");
@@ -71,5 +72,7 @@ function PlayFixSound() {
 }
 
 function StopSound() {
-    audioElem_slot.pause();
+    if (typeof audioElem_slot !== 'undefined') {
+        audioElem_slot.pause();
+    }
 }
